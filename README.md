@@ -31,30 +31,7 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-## Host on GitHub Pages
 
-This folder is ready to deploy as-is (all paths are relative, `.nojekyll` is
-included, and a deploy workflow ships in `.github/workflows/deploy-pages.yml`).
-
-1. Create a new repository on GitHub (e.g. `ttalloted`).
-2. From this folder:
-
-   ```bash
-   git init
-   git add .
-   git commit -m "Timetable Allotter"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/ttalloted.git
-   git push -u origin main
-   ```
-
-3. In the repo: **Settings → Pages → Build and deployment → Source →
-   GitHub Actions**.
-4. The included workflow deploys automatically on every push to `main`.
-   Your site will be live at `https://<your-username>.github.io/ttalloted/`.
-
-Alternatively, skip the workflow: set Pages **Source** to
-**Deploy from a branch** → `main` / `(root)` and it works just the same.
 
 ## How the auto-allotter works
 
